@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="441.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zd_lab1_javafx.AboutController">
+   <children>
+      <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Made by:" wrappingWidth="97.6708984375">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Арцишевский Максим, группа А-13-18" wrappingWidth="362.6708984375">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version:" wrappingWidth="97.6708984375">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="v3.0" wrappingWidth="362.6708984375">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal task:" wrappingWidth="181.6708984375">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вариант №25:" wrappingWidth="362.6708984375">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Комбинированное шифрование (последовательно по вариантам 1 и 7)." wrappingWidth="362.6708984375">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="CloseButton" layoutX="168.0" layoutY="401.0" mnemonicParsing="false" onAction="#OnActionCloseButton" text="Close" />
+      <Text layoutX="15.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1: Шифрование перестановкой (ключ задается именем учетной записи пользователя)" wrappingWidth="362.6708984375">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7: Шифрование заменой (используется побайтное шифрование без ключа)" wrappingWidth="362.6708984375">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

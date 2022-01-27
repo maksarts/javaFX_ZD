@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zd_lab1_javafx.ListOfAccounts">
+   <children>
+      <Button fx:id="CloseButton" layoutX="521.0" layoutY="355.0" mnemonicParsing="false" onAction="#OnActionCloseButton" text="Close" />
+      <ListView fx:id="ListAccs" editable="true" layoutX="33.0" layoutY="65.0" prefHeight="279.0" prefWidth="337.0" AnchorPane.rightAnchor="230.0" />
+      <Text layoutX="33.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registered accounts:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="EditButton" layoutX="460.0" layoutY="125.0" mnemonicParsing="false" onAction="#OnActionEditButton" text="Add" />
+      <TextField fx:id="NewUser" layoutX="390.0" layoutY="82.0" prefHeight="31.0" prefWidth="182.0" />
+      <Text layoutX="390.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new user:" />
+      <RadioButton fx:id="RB_block" layoutX="382.0" layoutY="225.0" mnemonicParsing="false" text="Block" />
+      <RadioButton fx:id="RB_button_restr" layoutX="382.0" layoutY="261.0" mnemonicParsing="false" text="Password restrictions" />
+      <Button fx:id="ButtonApplyChanges" layoutX="426.0" layoutY="294.0" mnemonicParsing="false" onAction="#OnActionButtonApplyChanges" text="Apply changes" />
+      <Text layoutX="394.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current user:" />
+      <Label fx:id="curUserTextField" layoutX="396.0" layoutY="194.0" prefHeight="13.0" prefWidth="196.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="ErrorLabel" layoutX="382.0" layoutY="334.0" prefHeight="11.0" prefWidth="216.0" textFill="#f20000" />
+   </children>
+</AnchorPane>

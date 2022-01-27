@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane fx:id="main_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zd_lab1_javafx.MainController">
+   <children>
+      <Button fx:id="LogIn_button" layoutX="202.0" layoutY="323.0" mnemonicParsing="false" onAction="#OnActionLogin_button" prefHeight="28.0" prefWidth="225.0" text="Log In" />
+      <PasswordField fx:id="password_textfield" layoutX="121.0" layoutY="200.0" prefHeight="31.0" prefWidth="375.0" />
+      <TextField fx:id="login_textfield" layoutX="121.0" layoutY="123.0" prefHeight="31.0" prefWidth="375.0" />
+      <Text layoutX="121.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="77.05615234375">
+         <font>
+            <Font name="Ebrima Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="121.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="119.05615234375">
+         <font>
+            <Font name="Ebrima Bold" size="22.0" />
+         </font>
+      </Text>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="Close" mnemonicParsing="false" onAction="#OnActionClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="AboutButton" mnemonicParsing="false" onAction="#OnActionAboutButton" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="error_output" layoutX="121.0" layoutY="246.0" prefHeight="61.0" prefWidth="375.0" textFill="RED" />
+   </children>
+</AnchorPane>

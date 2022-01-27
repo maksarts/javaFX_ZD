@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="main_form" prefHeight="401.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zd_lab1_javafx.WorkController">
+   <children>
+      <Button fx:id="Close_button" layoutX="530.0" layoutY="355.0" mnemonicParsing="false" onAction="#OnActionClose_button" text="Exit" />
+      <MenuBar layoutY="-2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Account">
+            <items>
+                <Menu mnemonicParsing="false" text="Settings">
+                  <items>
+                    <MenuItem fx:id="Change_pass" mnemonicParsing="false" onAction="#OnActionChange_pass" text="Change password" />
+                  </items>
+                </Menu>
+              <MenuItem fx:id="Close_menu" mnemonicParsing="false" onAction="#OnActionClose_menu" text="Log out" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="About" mnemonicParsing="false" onAction="#OnActionAbout" text="About" />
+            </items>
+          </Menu>
+            <Menu fx:id="AdminMenu" mnemonicParsing="false" onAction="#OnActionAdminMenu" text="Admin menu">
+              <items>
+                  <MenuItem fx:id="List_of_accs" mnemonicParsing="false" onAction="#OnActionList_of_accs" text="Accounts settings" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
